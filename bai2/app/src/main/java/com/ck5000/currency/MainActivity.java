@@ -58,7 +58,7 @@ public class MainActivity extends AppCompatActivity{
 				if(aBoolean){
 					try{
 						double d = Double.valueOf(String.valueOf(editText1.getText()));
-						double res = d * currency1.rate / currency2.rate;
+						double res = d * currency2.rate / currency1.rate;
 						editText2.setText("" + res);
 					}catch(Exception e){
 						editText2.setText("");
@@ -79,7 +79,7 @@ public class MainActivity extends AppCompatActivity{
 				if(!aBoolean){
 					try{
 						double d = Double.valueOf(String.valueOf(editText2.getText()));
-						double res = d * currency2.rate / currency1.rate;
+						double res = d * currency1.rate / currency2.rate;
 						editText1.setText("" + res);
 					}catch(Exception e){
 						editText1.setText("");
@@ -119,7 +119,7 @@ public class MainActivity extends AppCompatActivity{
 			}
 			try{
 				double d = Double.valueOf(String.valueOf(editText1.getText()));
-				double res = d*currency1.rate/currency2.rate;
+				double res = d*currency2.rate/currency1.rate;
 				editText2.setText(""+res);
 			}catch(Exception e){
 				editText2.setText("");
